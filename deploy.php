@@ -39,28 +39,37 @@ if (!empty($git_token)) {
     $repo_url = "https://{$git_token}@github.com/kushprakash/upi-intent.git";
 }
 
+// Set up environment paths and HOME for cPanel git execution
+$home_dir = dirname($project_path);
+putenv("HOME={$home_dir}");
+putenv("PATH=" . (getenv("PATH") ?: "") . ":/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/cpanel/3rdparty/bin");
+
+// Check if exec is enabled
+$exec_enabled = function_exists('exec') && !in_array('exec', array_map('trim', explode(',', ini_get('disable_functions'))));
+
 // Check if .git exists, if not initialize repository
 $is_git_repo = is_dir($project_path . '/.git');
 
 $commands = [];
 
+$commands['System Diagnostic'] = 'echo "User: $(whoami)"; echo "PWD: $(pwd)"; echo "Git binary: $(which git 2>&1)"; git --version 2>&1';
 $commands['Git Safe Directory'] = 'git config --global --add safe.directory "*"';
 $commands['Remove Index Lock'] = 'rm -f .git/index.lock';
 
 if (!$is_git_repo) {
     $commands['Initialize Git'] = 'git init';
-    $commands['Set Remote Origin'] = "git remote add origin {$repo_url} || git remote set-url origin {$repo_url}";
-    $commands['Fetch Origin'] = 'git fetch origin main';
-    $commands['Checkout & Hard Reset'] = 'git reset --hard origin/main && git branch -M main';
+    $commands['Set Remote Origin'] = "git remote add origin {$repo_url} 2>&1 || git remote set-url origin {$repo_url} 2>&1";
+    $commands['Fetch Origin'] = 'git fetch origin main 2>&1';
+    $commands['Checkout & Hard Reset'] = 'git reset --hard origin/main 2>&1 && git branch -M main 2>&1';
 } else {
     if (!empty($git_token)) {
-        $commands['Update Remote URL with Token'] = "git remote set-url origin {$repo_url}";
+        $commands['Update Remote URL with Token'] = "git remote set-url origin {$repo_url} 2>&1";
     }
-    $commands['Fetch Latest Changes'] = 'git fetch origin main || git fetch --all';
-    $commands['Force Reset to Origin Main'] = 'git reset --hard origin/main';
+    $commands['Fetch Latest Changes'] = 'git fetch origin main 2>&1 || git fetch --all 2>&1';
+    $commands['Force Reset to Origin Main'] = 'git reset --hard origin/main 2>&1';
 }
 
-$commands['Show Latest Commit'] = 'git log -1 --stat';
+$commands['Show Latest Commit'] = 'git log -1 --stat 2>&1';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -169,6 +178,22 @@ $commands['Show Latest Commit'] = 'git log -1 --stat';
         </div>
 
         <?php
+        $disabled_funcs = ini_get('disable_functions');
+        $disabled_arr = array_map('trim', explode(',', strtolower($disabled_funcs)));
+        $is_exec_disabled = in_array('exec', $disabled_arr) || !function_exists('exec');
+
+        if ($is_exec_disabled) {
+            echo "<div class='summary-box summary-fail' style='margin-bottom:25px; text-align:left;'>";
+            echo "⚠️ <strong style='font-size:20px;'>PHP exec() is DISABLED on this server!</strong><br><br>";
+            echo "<span style='font-size:14px; font-weight:normal; line-height:1.6;'>";
+            echo "cPanel security settings me PHP se system commands (exec, shell_exec) chalana band hai.<br>";
+            echo "<strong>Server Disabled Functions:</strong> <code>" . htmlspecialchars($disabled_funcs ?: 'None reported') . "</code><br><br>";
+            echo "<strong>Ise fix karne ke liye:</strong><br>";
+            echo "1. cPanel me <strong>Select PHP Version</strong> ya <strong>MultiPHP INI Editor</strong> me jayein.<br>";
+            echo "2. <strong>disable_functions</strong> list se <code>exec</code> aur <code>shell_exec</code> hata dein (ya cPanel Git Version Control use karein).";
+            echo "</span></div>";
+        }
+
         $has_error = false;
 
         foreach ($commands as $name => $cmd) {
