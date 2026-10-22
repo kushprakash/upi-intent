@@ -1,0 +1,12 @@
+RewriteEngine On
+
+# If the request is to do.php, forward it to do.php
+RewriteCond %{REQUEST_URI} ^/do.php [NC]
+RewriteRule ^ do.php [L]
+
+# If the file or directory exists, serve it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Otherwise, forward the request to index.php for short links
+RewriteRule ^([^/]+)$ index.php?code=$1 [L]

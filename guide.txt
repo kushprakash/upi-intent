@@ -1,0 +1,94 @@
+IMPORTANT NOTE
+This source code is easy to install and does not require advanced technical knowledge.
+Please follow all steps carefully to avoid any installation issues.
+
+------------------------------------------------------------
+STEP 1: Upload Code to Hosting
+
+1. Login to your hosting control panel.
+2. Open File Manager.
+3. Go to the public_html directory.
+4. Upload all source code files (ZIP or folder).
+5. If uploaded as ZIP, extract it inside public_html.
+
+Make sure all files are properly uploaded before moving to the next step.
+
+------------------------------------------------------------
+STEP 2: Database Configuration
+
+1. Open the following file:
+   /pages/dbInfo.php
+
+2. Inside this file, enter your database details:
+
+- Database Host
+- Database Name
+- Database Username
+- Database Password
+
+Example:
+DB_HOST     = localhost
+DB_NAME     = your_database_name
+DB_USER     = your_database_username
+DB_PASS     = your_database_password
+
+Save the file after updating the details.
+
+------------------------------------------------------------
+STEP 3: Import Database SQL File
+
+1. Go to phpMyAdmin from your hosting panel.
+2. Select your created database.
+3. Click on the Import tab.
+4. Upload the SQL file named:
+
+   Database.sql
+
+5. Click on the Import / Go button.
+
+Wait until the import process is completed successfully.
+
+------------------------------------------------------------
+STEP 4: Configure Google reCAPTCHA Keys
+
+1. Open phpMyAdmin.
+2. Select your database.
+3. Open the table:
+
+   website_setting
+
+4. Update the following fields:
+
+- site_key     → Your Google reCAPTCHA Site Key
+- secret_key  → Your Google reCAPTCHA Secret Key
+
+You can generate reCAPTCHA keys from:
+https://www.google.com/recaptcha/admin/create
+
+Save the changes after updating the keys.
+
+------------------------------------------------------------
+INSTALLATION COMPLETED
+
+Your website installation is now complete.
+
+✔ Code uploaded successfully  
+✔ Database connected  
+✔ SQL file imported  
+✔ reCAPTCHA configured  
+
+You can now open your website URL in the browser.
+
+------------------------------------------------------------
+SUPPORT NOTE
+
+If you face any issues:
+- Re-check database credentials
+- Ensure Database.sql is imported correctly
+- Verify reCAPTCHA keys
+
+For further assistance, contact the script provider.
+
+------------------------------------------------------------
+Design & Development by Code Provider
+Version: 1.0

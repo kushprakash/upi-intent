@@ -1,0 +1,9 @@
+# Archives & Large files
+archive.zip
+*.zip
+*.tar.gz
+*.rar
+
+# Environment & Logs
+*.log
+.env

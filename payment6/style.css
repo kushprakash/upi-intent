@@ -1,0 +1,1633 @@
+@charset "UTF-8";
+body {
+    font-family: 'Cabin', sans-serif !important;
+}
+
+.payments-methods-container li:hover .pm_right-arrow svg path,
+.payments-methods-container li:hover .pm_right-arrow svg rect {
+    fill: #1890FF !important;
+}
+
+.customer-detail-button-header-vue {
+    background-color: rgba(25, 118, 210, 0.1) !important;
+    ;
+}
+
+.payments-methods-container li:hover {
+    border-color: #1890FF !important;
+    background-color: rgba(25, 118, 210, 0.1) !important;
+}
+
+.custom-background,
+.custom-background:hover,
+.custom-background:focus,
+.custom-background:active,
+.custom-background.active {
+    background: #1890FF !important;
+}
+
+.btn-chk-paykun:active,
+.btn-chk-paykun {
+    border-color: #1890FF !important;
+}
+
+.common-border-bottom-selection input:checked+label.custom-border-bottom {
+    border: 1px solid #1890FF !important;
+}
+
+/*.custom-border-bottom { border-bottom: 4px solid #1890FF !important; }*/
+
+.custom-background-transparent {
+    background: rgba(25, 118, 210, 0.03) !important;
+}
+
+.btn-select-payment-method:hover p,
+.btn-change-payment-method:hover p {
+    font-weight: 500;
+    transition-property: background, border-radius;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+
+.chk-net-banking-option label:hover,
+.chk-upi-option-group label:hover,
+.checkout-wallet label:hover {
+    box-shadow: 0 3px 6px #DADDE4;
+}
+
+.payment-b-img {
+    height: 27px;
+    width: 27px;
+}
+
+.checkout-overlay .chk-payment-cancel .chk_modal_header h4 {
+    color: #1890FF !important;
+}
+
+.count-down-timer {
+    color: #1890FF !important;
+}
+
+.custom02 label::after {
+    background: #1890FF !important
+}
+
+.custom02 input[type="radio"]:checked+label::before {
+    border: 1px solid rgba(25, 118, 210, 0.4) !important;
+}
+
+@-webkit-keyframes spin {
+    0%,
+    100% {
+        box-shadow: .2em 0 0 0 #1890FF;
+    }
+    12% {
+        box-shadow: .2em .2em 0 0 #1890FF;
+    }
+    25% {
+        box-shadow: 0 .2em 0 0 #1890FF;
+    }
+    37% {
+        box-shadow: -.2em .2em 0 0 #1890FF;
+    }
+    50% {
+        box-shadow: -.2em 0 0 0 #1890FF;
+    }
+    62% {
+        box-shadow: -.2em -.2em 0 0 #1890FF;
+    }
+    75% {
+        box-shadow: 0 -.2em 0 0 #1890FF;
+    }
+    87% {
+        box-shadow: .2em -.2em 0 0 #1890FF;
+    }
+}
+
+@keyframes spin {
+    0%,
+    100% {
+        box-shadow: .2em 0 0 0 #1890FF;
+    }
+    12% {
+        box-shadow: .2em .2em 0 0 #1890FF;
+    }
+    25% {
+        box-shadow: 0 .2em 0 0 #1890FF;
+    }
+    37% {
+        box-shadow: -.2em .2em 0 0 #1890FF;
+    }
+    50% {
+        box-shadow: -.2em 0 0 0 #1890FF;
+    }
+    62% {
+        box-shadow: -.2em -.2em 0 0 #1890FF;
+    }
+    75% {
+        box-shadow: 0 -.2em 0 0 #1890FF;
+    }
+    87% {
+        box-shadow: .2em -.2em 0 0 #1890FF;
+    }
+}
+
+.two-payment-style-btn-container button:hover {
+    border: 1px solid #1890FF !important;
+}
+
+.template-header {
+    display: flex;
+    border-radius: 5px;
+    background: #fff;
+    margin: -70px 10px -10px;
+    padding: 15px !important
+}
+
+.checkout-bg {
+    height: 180px
+}
+
+.chk-avatar {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px #dadde4;
+    padding: 10px;
+    width: 78px;
+    height: 78px
+}
+
+.chk-product-info {
+    margin-left: 30px
+}
+
+.chk-product-info .chk-brand-name {
+    color: #2a4b75;
+    margin-bottom: 4px;
+    font-size: 24px;
+    font-weight: 700
+}
+
+.chk-product-info .product-info {
+    color: #2a4b75;
+    margin-bottom: 5px;
+    font-size: 12px
+}
+
+.chk-product-info .product-amount-label {
+    color: #2a4b75;
+    font-size: 24px
+}
+
+.product-amount {
+    color: #4a6a92
+}
+
+.card-header {
+    background-color: #fff
+}
+
+.p-header-top-sub-container {
+    text-align: end;
+    padding-right: 10px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500
+}
+
+.p-cancel-transaction {
+    opacity: .72;
+    cursor: pointer
+}
+
+.p-combine-button {
+    width: 32.25806%;
+    background: none;
+    font: normal normal normal 12px/16px Segoe UI;
+    color: #2a4b75;
+    padding-top: 10px !important
+}
+
+.p-combine-button-border {
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-top: 0;
+    border-bottom: 0;
+    border-color: #e3eef6 !important
+}
+
+.pm-icon-small-btn {
+    vertical-align: bottom
+}
+
+.pm-small-btn-title {
+    color: #2a4b75;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 2px
+}
+
+.p-combine-button:hover .pm-small-btn-title {
+    font-weight: 600
+}
+
+.payments-methods-container li {
+    border: 1px solid #e3eef6;
+    padding: 0;
+    margin-bottom: 10px
+}
+
+button:focus {
+    outline: none !important
+}
+
+.chk-border-devider {
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(left, hsla(0, 0%, 85.9%, 0), #dae7ee, hsla(0, 0%, 85.9%, 0));
+    background: -webkit-linear-gradient(left, hsla(0, 0%, 85.9%, 0), #dae7ee, hsla(0, 0%, 85.9%, 0));
+    clear: both;
+    margin: 0
+}
+
+.pm_right-arrow {
+    position: absolute;
+    top: 15px;
+    right: 20px
+}
+
+.btn-payment-method-single {
+    background: transparent;
+    border: 0;
+    padding: 12px;
+    position: relative
+}
+
+.p-main-title {
+    font: normal normal 600 16px/21px Segoe UI;
+    color: #2a4b75;
+    margin: 3px 25px
+}
+
+.customer-edit-button {
+    text-align: left;
+    font: normal normal 400 12px/19px Segoe UI;
+    color: #1890FF;
+    background: no-repeat;
+    border: 0 !important
+}
+
+button:focus {
+    outline: none !important
+}
+
+.section-title-with-space {
+    border: 1px solid #e3eef6;
+    margin-bottom: 0
+}
+
+.chk-input-icon {
+    position: relative;
+    top: 33px;
+    left: 12px
+}
+
+.svg-h-cng-group:focus-within .chk-input-icon svg path {
+    fill: #3d71e2
+}
+
+.svg-h-cng-group input[class^=invalid]+.chk-input-icon svg path {
+    fill: red !important
+}
+
+.form-group .form-control {
+    border: 1px solid #e3eef6;
+    border-radius: 2px;
+    width: 100%;
+    padding-top: 2px;
+    padding-bottom: 7px;
+    padding-left: 35px;
+    color: #2a4b75;
+    font-size: 14px;
+    font-weight: 400;
+    height: 41px;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji
+}
+
+.form-group .form-control:focus {
+    box-shadow: none;
+    border-color: #3d71e2
+}
+
+.customer-detail-area {
+    display: none;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 20px
+}
+
+.customer-detail {
+    border: 1px solid #e3eef6;
+    padding: 10px 15px
+}
+
+.customer-detail .section-title-sub {
+    font-size: 16px;
+    font-weight: 400;
+    color: #1e324a
+}
+
+.customer-detail .customer-edit-button {
+    font-size: 16px;
+    font-weight: 400;
+    color: #3d71e2
+}
+
+.customer-detail {
+    padding: 3px 15px
+}
+
+.checkout-net-banking .chk-net-banking-box .chk-net-banking-option-group .chk-net-banking-option {
+    width: 25%;
+    margin-bottom: -9px
+}
+
+.checkout-net-banking .chk-net-banking-box .chk-net-banking-option-group {
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+.chk-z-index-relative {
+    z-index: 4;
+    position: relative
+}
+
+.checkout-net-banking .chk-net-banking-box {
+    padding: 25px
+}
+
+.checkout-net-banking .chk-net-banking-box .chk-net-banking-option-group .chk-net-banking-option input.chk-net-banking-radio {
+    visibility: hidden;
+    position: absolute
+}
+
+.checkout-net-banking .chk-net-banking-box .chk-net-banking-option-group .chk-net-banking-option label {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    height: 75px;
+    border: 1px solid #e3eef6;
+    cursor: pointer
+}
+
+.chk-border-right {
+    border-right: 1px solid #e3eef6
+}
+
+.payment-b-img {
+    height: 27px;
+    width: 27px
+}
+
+.nb-list {
+    border: 1px solid #e3eef6;
+    border-radius: 4px;
+    color: #2a4b75;
+    font-size: 14px;
+    height: 45px
+}
+
+.checkout-net-banking .chk-net-banking-box .chk-net-banking-option-group .chk-net-banking-option p {
+    color: #2a4b75;
+    font-size: 11px
+}
+
+.form-group label {
+    color: #2a4b75;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 0
+}
+
+input.form-control {
+    border: 0;
+    border-bottom: 1px solid #e3eef6;
+    border-radius: 0;
+    font-size: 14px;
+    padding-left: 0 !important
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #3d71e2
+}
+
+#dcccPayOption {
+    border-radius: 7px;
+    border: 1px solid #e3eef6
+}
+
+.form-group .form-control::-moz-placeholder {
+    color: #9dafc6;
+    font-size: 12px
+}
+
+.form-group .form-control:-ms-input-placeholder {
+    color: #9dafc6;
+    font-size: 12px
+}
+
+.form-group .form-control::placeholder {
+    color: #9dafc6;
+    font-size: 12px
+}
+
+.chk-card-brand-icon {
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: 40px 1px;
+    position: absolute;
+    right: 42px
+}
+
+.chk-card-brand-icon.rupay {
+    background-position: 0 0
+}
+
+.chk-card-brand-icon.amex {
+    background-position: 0 -110px
+}
+
+.chk-card-brand-icon.diners {
+    background-position: 0 -150px
+}
+
+.chk-card-brand-icon.mastercard {
+    background-position: 0 -30px
+}
+
+.chk-card-brand-icon.visa {
+    background-position: 0 -70px
+}
+
+.lbl-style {
+    color: #2a4b75;
+    font-weight: 600;
+    font-size: 12px
+}
+
+.checkout-upi-intent-box-detail-app-option ul {
+    list-style: none
+}
+
+.checkout-upi-intent-box-detail-app-option ul li {
+    border: 1px solid #e3eef6;
+    padding: 0;
+    margin-bottom: 10px;
+    width: 47.61905%;
+    display: inline-block;
+    text-align: center
+}
+
+.checkout-upi-intent-box-detail-app-option ul li button {
+    background: transparent;
+    border: 0;
+    padding: 2px;
+    position: relative;
+    color: #2a4b75;
+    font-size: 13px
+}
+
+.checkout-upi-intent-box-detail-app-option ul li button img {
+    height: 20px;
+    display: block
+}
+
+.innrer-text {
+    vertical-align: middle;
+    padding: 10px;
+    display: inline-block;
+    color: #2a4b75;
+    font-size: 13px
+}
+
+.chk-net-banking-radio {
+    visibility: hidden;
+    position: absolute
+}
+
+.app-lbl {
+    cursor: pointer;
+    margin: 0;
+    width: 100%
+}
+
+.checkout-upi-intent-box-detail-app-option input:checked+label.custom-border-bottom {
+    border-bottom: 4px solid #557af5 !important
+}
+
+.chk-border-right {
+    border-right: 1px solid #e3eef6 !important
+}
+
+.checkout-upi-box .chk-upi-option-group .chk-upi-option {
+    width: 100%
+}
+
+.checkout-upi-box .chk-upi-option-group {
+    display: flex
+}
+
+.chk-z-index-relative {
+    z-index: 4;
+    position: relative
+}
+
+.checkout-upi-box {
+    padding: 6px 25px 25px
+}
+
+.checkout-upi-box .chk-upi-option-group .chk-upi-option input.chk-upi-payment-radio {
+    visibility: hidden
+}
+
+.checkout-upi-box .chk-upi-option-group .chk-upi-option label {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    width: 100%;
+    height: 55px;
+    border: 1px solid #e3eef6;
+    cursor: pointer
+}
+
+.chk-border-right-0 {
+    border-right: 0 !important
+}
+
+.checkout-upi-box .chk-upi-option-group .chk-upi-option span {
+    color: #2a4b75;
+    font-size: 13px
+}
+
+.chk-margin-top-33 {
+    margin-top: -33px
+}
+
+.chk-upi-input .chk-upi-address-label {
+    color: #2a4b75;
+    font-size: 12px;
+    font-weight: 400
+}
+
+.chk-upi-input .input-group input.form-control {
+    font-size: 14px;
+    border-radius: 0;
+    border-right: 0;
+    color: #2a4b75;
+    border-color: #e3eef6;
+    height: 41px
+}
+
+.chk-upi-input .input-group input.form-control:focus {
+    border-color: #e3eef6;
+    box-shadow: none
+}
+
+.chk-upi-input .input-group .input-group-append select.form-control {
+    width: 120px
+}
+
+.chk-upi-input .input-group select.form-control {
+    font-size: 14px;
+    border-radius: 0;
+    color: #2a4b75;
+    background-color: #f9fcff;
+    border-left: 0;
+    border-color: #e3eef6;
+    height: 41px
+}
+
+.chk-upi-input .input-group .input-group-append select.form-control:focus {
+    border-color: #e3eef6 !important;
+    box-shadow: none !important
+}
+
+.chk-upi-input .input-group .input-group-append input.form-control {
+    font-size: 14px;
+    border-radius: 0;
+    color: #2a4b75;
+    background-color: #f9fcff;
+    border-left: 0;
+    border-color: #e3eef6;
+    height: 41px;
+    width: 120px;
+    border-right: 1px solid #e3eef6
+}
+
+.inner-font-style {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji !important
+}
+
+.lbl-style {
+    color: #2a4b75;
+    font-weight: 600;
+    font-size: 12px
+}
+
+.checkout-upi-intent-box-detail-app-option ul {
+    list-style: none
+}
+
+.checkout-upi-intent-box-detail-app-option ul li {
+    border: 1px solid #e3eef6;
+    padding: 0;
+    margin-bottom: 10px;
+    width: 32.25806%;
+    display: inline-block;
+    text-align: center
+}
+
+.checkout-upi-intent-box-detail-app-option ul li button {
+    background: transparent;
+    border: 0;
+    padding: 2px;
+    position: relative;
+    color: #2a4b75;
+    font-size: 13px
+}
+
+.checkout-upi-intent-box-detail-app-option ul li button img {
+    height: 20px;
+    display: block
+}
+
+.innrer-text {
+    vertical-align: middle;
+    padding: 6px;
+    display: block;
+    color: #2a4b75;
+    font-size: 13px
+}
+
+.chk-net-banking-radio {
+    visibility: hidden;
+    position: absolute
+}
+
+.app-lbl {
+    cursor: pointer;
+    margin: 0;
+    width: 100%
+}
+
+.checkout-upi-intent-box-detail-app-option input:checked+label.custom-border-bottom {
+    border-bottom: 4px solid #557af5 !important
+}
+
+.checkout-qr-box {
+    padding: 25px
+}
+
+.chk-qr-discription p {
+    color: #2a4b75;
+    font-size: 12px;
+    text-align: center
+}
+
+.chk-qr-code-area {
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px
+}
+
+.chk-qr-code-area .generated-qr-code {
+    position: relative;
+    display: none
+}
+
+.chk-qr-code-area .chk-qr-code-frame {
+    position: relative
+}
+
+.box {
+    position: absolute !important;
+    margin-left: -126px;
+    margin-top: 21px
+}
+
+.loader-16 {
+    transform: rotate(45deg);
+    perspective: 1000px;
+    border-radius: 50%
+}
+
+.loader-16:after,
+.loader-16:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite
+}
+
+.loader-16:before {
+    transform: rotateX(70deg)
+}
+
+.loader-16:after {
+    transform: rotateY(70deg);
+    -webkit-animation-delay: .4s;
+    animation-delay: .4s
+}
+
+.box {
+    display: inline-block;
+    border-radius: 3px;
+    font-size: 30px;
+    padding: 1em;
+    position: relative;
+    margin-bottom: .25em;
+    vertical-align: top;
+    transition: color .3s, border .3s, transform .3s, opacity .3s
+}
+
+[class*=loader-] {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    color: inherit;
+    vertical-align: middle;
+    pointer-events: none
+}
+
+@-webkit-keyframes rotate-data-v-01cc46a6 {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg)
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(1turn)
+    }
+}
+
+@keyframes rotate-data-v-01cc46a6 {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg)
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(1turn)
+    }
+}
+
+@-webkit-keyframes rotateccw-data-v-01cc46a6 {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg)
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(-1turn)
+    }
+}
+
+@keyframes rotateccw-data-v-01cc46a6 {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg)
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(-1turn)
+    }
+}
+
+.qr-retry-btn {
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer
+}
+
+.checkout-net-banking .chk-net-banking-box .chk-net-banking-option-group .chk-net-banking-option {
+    width: 25%;
+    margin-bottom: -9px
+}
+
+.checkout-net-banking .chk-net-banking-box .chk-net-banking-option-group {
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+.chk-z-index-relative {
+    z-index: 4;
+    position: relative
+}
+
+.checkout-net-banking .chk-net-banking-box {
+    padding: 25px
+}
+
+.checkout-net-banking .chk-net-banking-box .chk-net-banking-option-group .chk-net-banking-option input.chk-net-banking-radio {
+    visibility: hidden;
+    position: absolute
+}
+
+.checkout-net-banking .chk-net-banking-box .chk-net-banking-option-group .chk-net-banking-option label {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    height: 75px;
+    border: 1px solid #e3eef6;
+    cursor: pointer
+}
+
+.chk-border-right-0 {
+    border-right: 0 !important
+}
+
+.chk-border-right {
+    border-right: 1px solid #e3eef6
+}
+
+.payment-b-img {
+    height: 27px;
+    width: 27px
+}
+
+.checkout-net-banking .chk-net-banking-box .chk-net-banking-option-group .chk-net-banking-option p {
+    color: #2a4b75;
+    font-size: 11px
+}
+
+.chk-card-box {
+    color: #2a4b75;
+    font-weight: 600;
+    font-size: 12px
+}
+
+select.form-control {
+    border: 1px solid #e3eef6;
+    color: #2a4b75;
+    font-size: 12px;
+    border-radius: 2px;
+    height: 41px
+}
+
+.chk-emi-plans-label p {
+    color: #2a4b75;
+    font-size: 12px;
+    margin-bottom: 5px;
+    font-weight: 600
+}
+
+input.chk-emi-radio {
+    visibility: hidden;
+    position: absolute
+}
+
+.chk-emi-plan-options {
+    padding-top: 5px
+}
+
+.chk-emi-plan-options:hover label {
+    border-color: #3d71e2;
+    transition: .5s ease-in-out
+}
+
+.chk-emi-plan-options label {
+    display: flex;
+    border: 1px solid #e3eef6;
+    width: 100%;
+    height: 41px;
+    border-radius: 2px;
+    color: #2a4b75;
+    padding-top: 9px;
+    font-size: 12px;
+    padding-left: 10px;
+    cursor: pointer
+}
+
+label .chk_emi_tenture {
+    width: 140px;
+    padding-right: 15px
+}
+
+label .chk_emi_net_payable {
+    width: 70px;
+    padding-right: 15px
+}
+
+label .chk-tenture-opt {
+    font-weight: 500
+}
+
+.chk-selected-plan {
+    margin-top: -15px
+}
+
+.chk-seleted-emi-plan-label p {
+    color: #2a4b75;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 15px
+}
+
+.chk-seleted-emi-plan-label p a {
+    color: #3d71e2;
+    font-size: 12px;
+    float: right;
+    margin-right: 5px;
+    font-weight: 400
+}
+
+.chk-seleted-emi-plan-label p a img {
+    padding-left: 5px;
+    vertical-align: bottom
+}
+
+.chk_selected_emi {
+    display: flex;
+    padding-left: 50px;
+    border: 1px solid #e3eef6;
+    padding-top: 5px;
+    padding-bottom: 5px
+}
+
+.chk_selected_emi:first-child,
+.chk_selected_emi:nth-child(2),
+.chk_selected_emi:nth-child(3) {
+    border-bottom: 0
+}
+
+.chk_selected_emi .chk_label,
+.chk_selected_emi p:nth-child(2) {
+    color: #9dafc6
+}
+
+.chk_selected_emi .chk_label {
+    width: 90px
+}
+
+.chk_selected_emi p {
+    font-size: 12px;
+    margin-bottom: 5px
+}
+
+.chk_selected_emi p:nth-child(3) {
+    color: #2a4b75;
+    margin-left: 10px
+}
+
+.chk_emi_card_label {
+    padding-top: 15px
+}
+
+.chk_emi_card_label p {
+    color: #2a4b75;
+    font-size: 12px;
+    font-weight: 600
+}
+
+.form-group {
+    margin-bottom: 8px
+}
+
+.form-group input.form-control {
+    border: 0;
+    border-bottom: 1px solid #e3eef6;
+    border-radius: 0;
+    font-size: 14px;
+    padding-left: 0 !important;
+    height: 25px
+}
+
+.form-group input.chk_cvv_box::-moz-placeholder {
+    font-size: 25px !important
+}
+
+.form-group input.chk_cvv_box:-ms-input-placeholder {
+    font-size: 25px !important
+}
+
+.form-group input.chk_cvv_box,
+.form-group input.chk_cvv_box::placeholder {
+    font-size: 25px !important
+}
+
+.form-group input.form-control::-moz-placeholder {
+    color: #9dafc6;
+    font-size: 12px
+}
+
+.form-group input.form-control:-ms-input-placeholder {
+    color: #9dafc6;
+    font-size: 12px
+}
+
+.form-group input.form-control::placeholder {
+    color: #9dafc6;
+    font-size: 12px
+}
+
+.form-group input.form-control:focus {
+    box-shadow: none;
+    border-color: #3d71e2
+}
+
+input:checked+label.lbl-emi {
+    border-color: #3d71e2;
+    transition: .5s ease-in-out
+}
+
+.btn-payment-method-single {
+    background: transparent;
+    border: 0;
+    padding: 12px;
+    position: relative
+}
+
+.p-main-title {
+    font: normal normal 600 16px/21px Segoe UI;
+    color: #2a4b75;
+    margin: 3px 25px
+}
+
+.payments-methods-container li {
+    border: 1px solid #e3eef6;
+    padding: 0;
+    margin-bottom: 10px
+}
+
+button:focus {
+    outline: none !important
+}
+
+.pm_right-arrow {
+    position: absolute;
+    top: 15px;
+    right: 20px
+}
+
+.btn-payment-method-single {
+    background: transparent;
+    border: 0;
+    padding: 12px;
+    position: relative
+}
+
+.p-main-title {
+    font: normal normal 600 16px/21px Segoe UI;
+    color: #2a4b75;
+    margin: 3px 25px
+}
+
+.payments-methods-container li {
+    border: 1px solid #e3eef6;
+    padding: 0;
+    margin-bottom: 10px
+}
+
+button:focus {
+    outline: none !important
+}
+
+.pm_right-arrow {
+    position: absolute;
+    top: 15px;
+    right: 20px
+}
+
+.customer-edit-button {
+    text-align: left;
+    color: #1890FF;
+    background: no-repeat;
+    border: 0 !important
+}
+
+button:focus {
+    outline: none !important
+}
+
+.payment-method-detail-area {
+    margin-left: 15px;
+    margin-right: 15px
+}
+
+.payment-method-detail {
+    font-size: 14px;
+    padding: 0 10px
+}
+
+.p-secured-by {
+    font: normal normal normal 10px/14px Segoe UI;
+    color: #9dafc6
+}
+
+.secure-icons-title {
+    vertical-align: bottom;
+    padding-top: 5px
+}
+
+.secure-logo-in-container {
+    display: inline-flex
+}
+
+.base-timer,
+.base-timer-with-only-time {
+    position: relative;
+    margin: 0 auto
+}
+
+.base-timer-with-only-time {
+    background: #f8fbfe;
+    border-radius: 25px;
+    padding: 10px 0 16px
+}
+
+.base-timer__svg {
+    transform: scaleX(1)
+}
+
+.base-timer__circle {
+    fill: none;
+    stroke: none
+}
+
+.base-timer__path-elapsed {
+    stroke-width: 7px;
+    stroke: grey
+}
+
+.base-timer__path-remaining {
+    stroke-width: 7px;
+    stroke-linecap: round;
+    transform: rotate(90deg);
+    transform-origin: center;
+    transition: all 1s linear;
+    fill-rule: nonzero;
+    stroke: currentColor
+}
+
+.base-timer__label_only_time {
+    width: 160px;
+    top: 0;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #fff
+}
+
+.base-timer__label_only_time:after {
+    color: #9dafc6;
+    position: absolute;
+    top: 34px;
+    font-size: 12px
+}
+
+.base-timer__label_only_time_sec:after {
+    content: "SEC";
+    left: 90px
+}
+
+.base-timer__label_only_time_min:after {
+    content: "MIN";
+    left: 46px
+}
+
+.separator {
+    margin: 7px
+}
+
+.base-timer__label {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #2a4b75
+}
+
+.title-count-down {
+    font-size: 14px;
+    font-weight: 700;
+    color: #2c3e50
+}
+
+.checkout-overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .29);
+    z-index: 9999;
+    display: none;
+}
+
+.checkout-overlay .chk-payment-process-box,
+.checkout-overlay .chk-payment-process-box-upi,
+.checkout-overlay .chk-payment-upi-process-box {
+    background-color: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 50%
+}
+
+.checkout-overlay .chk-payment-process-box-upi {
+    /* height: 65%;
+        min-height: 300px; */
+}
+
+.entered-upi-timer {
+    margin-top: 30px
+}
+
+.checkout-overlay .chk-payment-process-box p,
+.checkout-overlay .chk-payment-upi-process-box p {
+    font-size: 14px;
+    color: #2a4b75
+}
+
+.checkout-overlay .chk-payment-process-box-upi {
+    padding-top: 0;
+    padding-bottom: 0
+}
+
+.chk-process.chk-process-upi {
+    background: #f8fbfe;
+    padding-top: 11px;
+    padding-left: 40px;
+    padding-bottom: 11px
+}
+
+.checkout-overlay .chk-payment-failed-box {
+    background-color: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 50%;
+}
+
+.checkout-overlay .chk-payment-failed-box p {
+    font-size: 15px;
+    color: #2a4b75
+}
+
+.checkout-overlay .chk-payment-cancel-box {
+    background-color: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 50%
+}
+
+.checkout-overlay .chk-payment-cancel-box p {
+    font-size: 12px;
+    color: #2a4b75
+}
+
+.checkout-overlay .chk-invalid-request-box {
+    background-color: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 50%
+}
+
+.checkout-overlay .chk-invalid-request-box p {
+    font-size: 12px;
+    color: #2a4b75
+}
+
+.checkout-overlay .chk-payment-cancel {
+    background: #fff;
+    padding: 10px;
+    margin: 6px;
+    border-radius: 4px
+}
+
+.checkout-overlay .chk-payment-cancel .chk_modal_header {
+    border-radius: 4px;
+    margin-bottom: 25px
+}
+
+.checkout-overlay .chk-payment-cancel .chk_modal_header h4 {
+    color: #3d71e2;
+    font-size: 18px
+}
+
+.checkout-overlay .chk-payment-cancel .chk_payment_cancel_modal_close {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    color: #2a4b75;
+    font-size: 24px;
+    font-weight: 400;
+    opacity: .7
+}
+
+.checkout-overlay .chk-payment-cancel .chk_payment_cancel_modal_close span {
+    cursor: pointer
+}
+
+.checkout-overlay .chk-payment-cancel .chk_modal_body .custom02 {
+    position: relative
+}
+
+.checkout-overlay .chk-payment-cancel .chk_modal_body .custom02 .chk_payment_cancel_reason_label {
+    font-size: 12px;
+    color: #2a4b75;
+    vertical-align: text-top
+}
+
+.checkout-overlay .chk-payment-cancel .chk_modal_body .custom02 .chk_payment_cancel_reason_label:after {
+    left: .29rem;
+    margin-top: -.22rem;
+    width: 7px;
+    height: 7px
+}
+
+.checkout-overlay .chk-payment-cancel .chk_modal_body .custom02 .chk_payment_cancel_reason_label:before {
+    width: 15px;
+    height: 15px
+}
+
+.checkout-overlay .chk-payment-cancel .chk_modal_body .form-group textarea.form-control {
+    border: 1px solid #b1bad2;
+    border-radius: 4px;
+    font-size: 12px;
+    height: 67px;
+    max-height: 67px;
+    resize: none
+}
+
+.checkout-overlay .chk-payment-cancel .chk_modal_body .form-group textarea {
+    padding: .375rem .75rem
+}
+
+.checkout-overlay .chk-payment-cancel .chk_modal_body .form-group textarea.form-control:focus {
+    border-color: #3d71e2;
+    box-shadow: none
+}
+
+.checkout-overlay .chk-payment-cancel .chk_modal_body .chk_payment_cancel_other_reason {
+    margin-top: 10px
+}
+
+.checkout-overlay .chk-payment-cancel .chk_modal_body .chk_payment_cancel_other_reason textarea.form-control::-moz-placeholder {
+    color: #9dafc6
+}
+
+.checkout-overlay .chk-payment-cancel .chk_modal_body .chk_payment_cancel_other_reason textarea.form-control:-ms-input-placeholder {
+    color: #9dafc6
+}
+
+.checkout-overlay .chk-payment-cancel .chk_modal_body .chk_payment_cancel_other_reason textarea.form-control::placeholder {
+    color: #9dafc6
+}
+
+.checkout-overlay .chk-payment-success-box {
+    background-color: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 50%
+}
+
+.loader-16 {
+    transform: rotate(45deg);
+    perspective: 1000px;
+    border-radius: 50%
+}
+
+.loader-16:after,
+.loader-16:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite
+}
+
+.loader-16:before {
+    transform: rotateX(70deg)
+}
+
+.loader-16:after {
+    transform: rotateY(70deg);
+    -webkit-animation-delay: .4s;
+    animation-delay: .4s
+}
+
+.box {
+    display: inline-block;
+    border-radius: 3px;
+    font-size: 30px;
+    padding: 1em;
+    position: relative;
+    margin-bottom: .25em;
+    vertical-align: top;
+    transition: color .3s, border .3s, transform .3s, opacity .3s
+}
+
+[class*=loader-] {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    color: inherit;
+    vertical-align: middle;
+    pointer-events: none
+}
+
+@-webkit-keyframes rotate-data-v-3c1efaea {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg)
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(1turn)
+    }
+}
+
+@keyframes rotate-data-v-3c1efaea {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg)
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(1turn)
+    }
+}
+
+@-webkit-keyframes rotateccw-data-v-3c1efaea {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg)
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(-1turn)
+    }
+}
+
+@keyframes rotateccw-data-v-3c1efaea {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg)
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(-1turn)
+    }
+}
+
+.checkout-overlay .chk-payment-link a:hover {
+    text-decoration: none
+}
+
+.checkout-overlay .chk-payment-link a {
+    font-size: 12px;
+    color: #3d71e2;
+    border-bottom: 1px solid #3d71e2;
+    padding-bottom: 3px
+}
+
+.entered-upi-step1 {
+    width: 100%;
+    margin: 0;
+    padding: 12px 10px 5px 25px
+}
+
+.upi-detailed-note {
+    background: #fdedcc;
+    bottom: 0;
+    position: absolute;
+    padding: 5px 70px;
+    text-align: center;
+    font-size: 14px;
+    color: #b88d34
+}
+
+.upi-step {
+    font-size: 12px;
+    color: #9dafc6
+}
+
+.entered-upi-instruction {
+    font-size: 14px;
+    font-weight: 700
+}
+
+#entered-vpa,
+.common-upi-font-color {
+    color: #2a4b75
+}
+
+#entered-vpa {
+    font-size: 12px;
+    padding-left: 2.2rem !important;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji
+}
+
+#app {
+    font-family: Cabin, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    width: 375px;
+    margin: 3% auto 0;
+    position: relative
+}
+
+.card-footer {
+    background-color: #fff !important;
+    border-top: 1px solid rgba(0, 0, 0, .01) !important;
+    z-index: 5
+}
+
+@media only screen and (max-device-width:480px) {
+    #app {
+        width: 100%;
+        margin-top: 0;
+        height: 100%
+    }
+    .card-footer {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        margin-bottom: 0 !important
+    }
+    .card-stretch {
+        box-shadow: none !important;
+        border: 0
+    }
+    .nb-xs {
+        border: 0 !important
+    }
+}
+
+.appListWrap[data-v-694604be] {
+    margin-top: 20px
+}
+
+.appListWrap .tips[data-v-694604be] {
+    color: #353535;
+    font-size: 12px;
+    padding: 10px 0
+}
+
+.appListWrap .methods[data-v-694604be] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap
+}
+
+.appListWrap .methods .imgWrap[data-v-694604be] {
+    height: 40px;
+    width: 150px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 2px solid rgba(0, 0, 0, .09);
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px
+}
+
+.appListWrap .methods .imgWrap[data-v-694604be]:active {
+    border: 2px solid #000
+}
+
+.appListWrap .methods .imgWrap img[data-v-694604be] {
+    width: 45px
+}
+
+.appListWrap .methods .imgWrap .text[data-v-694604be] {
+    padding-left: 6px;
+    font-size: 12px;
+    color: #999;
+    font-weight: 700
+}

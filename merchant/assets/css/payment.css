@@ -1,0 +1,68 @@
+body {
+ background:#f2f3f8 !important;
+}
+.card {
+    border-radius: 10px;
+    background:#ffffff !important;
+}
+
+.sp-background {
+  background-image: linear-gradient(360deg, #2093ef, #024378);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}  
+
+.opacity-60 {
+    opacity: 0.6 !important;
+}
+
+.bg-mix {
+    background: linear-gradient(#024378,#2093ef);
+}
+
+.btn-outline-primary {
+    color: #0f66ac;
+    background-color: transparent;
+    background-image: none;
+    border-color: #1068af;
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background: linear-gradient(#024378,#2093ef);
+    border-color: #0a5897;
+}
+
+.f-20 {
+  font-size: 20px;
+}
+
+.hand {
+  cursor: pointer;
+}
+
+.btn-white-outline {
+    color: #212529;
+    background-color: transparent;
+    background-image: none;
+    border-color: #212529;
+}
+
+.btn-white-outline:hover {
+    color: #fff;
+    background-color: transparent;
+    border-color: #0a5897;
+}
+
+.bg-black {
+   background: #000000; 
+}
+
+.btn-app-logo{
+ padding: 0;
+}
+
+.btn-app-logo img {
+    height: 55px;
+}
