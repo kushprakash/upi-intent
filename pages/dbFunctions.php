@@ -52,6 +52,7 @@ function getWebsiteSettings() {
 }
 
   // Function to generate a random instance_id
+if (!function_exists('generateRandomInstanceId')) {
   function generateRandomInstanceId($length = 16) {
     $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
     $randomString = 'I'; // Fixed 'I' as the first character
@@ -69,6 +70,7 @@ function getWebsiteSettings() {
     $randint = rand(100, 900);
     
     return $randomString . $randint . $lastSixDigits;
+  }
 }
 
 

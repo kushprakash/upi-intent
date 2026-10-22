@@ -199,16 +199,18 @@ if(isset($_POST["userRegister"])){
             $pass = password_hash($password, PASSWORD_BCRYPT);
             $today = date("Y-m-d", strtotime("+3 days"));
 
-            function generateRandomInstanceId($length = 16) {
-              $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-              $randomString = 'I'; 
-              for ($i = 1; $i < $length - 6; $i++) {
-                  $randomString .= $characters[rand(0, strlen($characters) - 1)];
-              }
-              $currentTime = time();
-              $lastSixDigits = substr(strval($currentTime), -6);
-              $randint = rand(100, 900);
-              return $randomString . $randint . $lastSixDigits;
+            if (!function_exists('generateRandomInstanceId')) {
+                function generateRandomInstanceId($length = 16) {
+                  $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+                  $randomString = 'I'; 
+                  for ($i = 1; $i < $length - 6; $i++) {
+                      $randomString .= $characters[rand(0, strlen($characters) - 1)];
+                  }
+                  $currentTime = time();
+                  $lastSixDigits = substr(strval($currentTime), -6);
+                  $randint = rand(100, 900);
+                  return $randomString . $randint . $lastSixDigits;
+                }
             }
 
             $instanceId = generateRandomInstanceId();
