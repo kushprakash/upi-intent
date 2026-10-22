@@ -7,4 +7,6 @@ date_default_timezone_set("Asia/Kolkata");
 $conn = new mysqli("localhost", "srhfbr_upi", "srhfbr_upi", "srhfbr_upi");
 
 $server = $_SERVER["SERVER_NAME"];
+
+//test
 ?>
