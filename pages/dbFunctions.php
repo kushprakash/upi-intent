@@ -32,7 +32,7 @@ function getWebsiteSettings() {
             'recaptcha_secret_key' => '6LcAbAgsAAAAAB-2p85-_YLSWSQWAuhHiUGkb7dQ',
             'smtp_host' => 'smtp.hostinger.com',
             'smtp_username' => 'support@garudhub.in',
-            'smtp_password' => 'Raushan7x@@@',
+            'smtp_password' => 'srhfbr_upi',
             'smtp_port' => 587,
             'smtp_encryption' => 'tls',
             'smtp_from_email' => 'support@garudhub.in',

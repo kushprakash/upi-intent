@@ -36,7 +36,7 @@ if(isset($_POST["type"]) && $_POST["type"] == 'forgot'){
             $mail->IsHTML(true);
             $mail->CharSet = 'UTF-8';
             $mail->Username = "support@garudhub.in";
-    	    $mail->Password = "Raushan7x@@@";
+    	    $mail->Password = "srhfbr_upi";
     	    $mail->SetFrom("support@garudhub.in","Greenpay");
     	    $mail->Subject = 'Forgot OTP Verfication';
             $mail->Body = $mailmsg;

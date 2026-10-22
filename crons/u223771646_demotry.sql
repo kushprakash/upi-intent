@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `u223771646_demotry`
+-- Database: `srhfbr_upi`
 --
 
 -- --------------------------------------------------------
@@ -723,7 +723,7 @@ CREATE TABLE `website_settings` (
   `recaptcha_secret_key` varchar(255) DEFAULT '6LcAbAgsAAAAAB-2p85-_YLSWSQWAuhHiUGkb7dQ',
   `smtp_host` varchar(255) DEFAULT 'smtp.hostinger.com',
   `smtp_username` varchar(255) DEFAULT 'support@garudhub.in',
-  `smtp_password` varchar(255) DEFAULT 'Raushan7x@@@',
+  `smtp_password` varchar(255) DEFAULT 'srhfbr_upi',
   `smtp_port` int(11) DEFAULT 587,
   `smtp_encryption` varchar(10) DEFAULT 'tls',
   `smtp_from_email` varchar(255) DEFAULT 'support@garudhub.in',
