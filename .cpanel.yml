@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/srhfbr/public_html/
+    - /bin/cp -rf * $DEPLOYPATH
+    - /bin/cp -rf .htaccess $DEPLOYPATH 2>/dev/null || true
